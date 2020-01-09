@@ -1,11 +1,11 @@
 openapi: 3.0.1
 info:
-  description: API Documentations
+  description: API Documentation
   license:
     name: GNU General Public License v3.0
     url: https://github.com/TheGamesDB/TheGamesDBv2/blob/master/LICENSE
   title: TheGamesDB API
-  version: 1.1.0
+  version: 2.0.0
 servers:
 - url: https://api.thegamesdb.net/
 tags:
@@ -60,6 +60,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by id
       tags:
       - Games
@@ -114,6 +117,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by name
       tags:
       - Games
@@ -168,6 +174,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by name
       tags:
       - Games
@@ -217,6 +226,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by platform id
       tags:
       - Games
@@ -259,6 +271,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch game(s) images by game(s) id
       tags:
       - Games
@@ -298,6 +313,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch games update
       tags:
       - Games
@@ -328,6 +346,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch platforms list
       tags:
       - Platforms
@@ -364,6 +385,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch platforms list by id
       tags:
       - Platforms
@@ -400,6 +424,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch platforms by name
       tags:
       - Platforms
@@ -442,6 +469,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch platform(s) images by platform(s) id
       tags:
       - Platforms
@@ -465,6 +495,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch Genres list
       tags:
       - Genres
@@ -488,6 +521,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch Developers list
       tags:
       - Developers
@@ -511,6 +547,9 @@ paths:
         400:
           content: {}
           description: bad input parameter
+        403:
+          content: {}
+          description: bad API key or hit rate-limit cap
       summary: Fetch Publishers list
       tags:
       - Publishers

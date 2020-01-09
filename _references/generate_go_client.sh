@@ -49,8 +49,8 @@ function main_openapi_generator() {
   cp "${yaml_file}" "${cur_file_name}" client_test.go "${refs_dir}/"
 
   cp client_test.go "${output_dir}"
-  sed -i '' "s/__GIT_USERNAME__/${git_user}/g" "${output_dir}/client_test.go"
-  sed -i '' "s/__GIT_REPONAME__/${git_repo}/g" "${output_dir}/client_test.go"
+  sed -i "s/__GIT_USERNAME__/${git_user}/g" "${output_dir}/client_test.go"
+  sed -i "s/__GIT_REPONAME__/${git_repo}/g" "${output_dir}/client_test.go"
 
   chmod +x "${output_dir}/git_push.sh"
 }
