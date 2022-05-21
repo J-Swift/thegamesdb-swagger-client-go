@@ -27,20 +27,20 @@ paths:
         required: true
         schema:
           type: string
-      - description: (Required) - supports `,` delimited list
+      - description: "(Required) - supports `,` delimited list"
         in: query
         name: id
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `players`, `publishers`,
-          `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,
-          `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`'
+      - description: "(Optional) - valid `,` delimited options: `players`, `publishers`,\
+          \ `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,\
+          \ `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`"
         in: query
         name: fields
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `boxart`, `platform`'
+      - description: "(Optional) - valid `,` delimited options: `boxart`, `platform`"
         in: query
         name: include
         schema:
@@ -51,16 +51,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/GamesByGameID'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by id
@@ -84,20 +84,20 @@ paths:
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `players`, `publishers`,
-          `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,
-          `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`'
+      - description: "(Optional) - valid `,` delimited options: `players`, `publishers`,\
+          \ `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,\
+          \ `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`"
         in: query
         name: fields
         schema:
           type: string
-      - description: (Optional) - platform `id` can be obtain from the platforms api
-          below, supports `,` delimited list
+      - description: "(Optional) - platform `id` can be obtain from the platforms\
+          \ api below, supports `,` delimited list"
         in: query
-        name: filter[platform]
+        name: "filter[platform]"
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `boxart`, `platform`'
+      - description: "(Optional) - valid `,` delimited options: `boxart`, `platform`"
         in: query
         name: include
         schema:
@@ -108,16 +108,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/GamesByGameID_v1'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by name
@@ -141,20 +141,20 @@ paths:
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `players`, `publishers`,
-          `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,
-          `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`'
+      - description: "(Optional) - valid `,` delimited options: `players`, `publishers`,\
+          \ `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,\
+          \ `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`"
         in: query
         name: fields
         schema:
           type: string
-      - description: (Optional) - platform `id` can be obtain from the platforms api
-          below, supports `,` delimited list
+      - description: "(Optional) - platform `id` can be obtain from the platforms\
+          \ api below, supports `,` delimited list"
         in: query
-        name: filter[platform]
+        name: "filter[platform]"
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `boxart`, `platform`'
+      - description: "(Optional) - valid `,` delimited options: `boxart`, `platform`"
         in: query
         name: include
         schema:
@@ -165,16 +165,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/GamesByGameID'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by name
@@ -192,21 +192,21 @@ paths:
         required: true
         schema:
           type: string
-      - description: (Required) - platform `id` can be obtain from the platforms api
-          below, supports `,` delimited list
+      - description: "(Required) - platform `id` can be obtain from the platforms\
+          \ api below, supports `,` delimited list"
         in: query
         name: id
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `players`, `publishers`,
-          `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,
-          `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`'
+      - description: "(Optional) - valid `,` delimited options: `players`, `publishers`,\
+          \ `genres`, `overview`, `last_updated`, `rating`, `platform`, `coop`, `youtube`,\
+          \ `os`, `processor`, `ram`, `hdd`, `video`, `sound`, `alternates`"
         in: query
         name: fields
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `boxart`, `platform`'
+      - description: "(Optional) - valid `,` delimited options: `boxart`, `platform`"
         in: query
         name: include
         schema:
@@ -217,16 +217,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/GamesByGameID'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch game(s) by platform id
@@ -234,7 +234,7 @@ paths:
       - Games
   /v1/Games/Images:
     get:
-      description: results can be filtered with `filter[type]` param
+      description: "results can be filtered with `filter[type]` param"
       operationId: GamesImages
       parameters:
       - description: (Required)
@@ -243,17 +243,17 @@ paths:
         required: true
         schema:
           type: string
-      - description: (Required) - game(s) `id` can be obtain from the above games
-          api, supports `,` delimited list
+      - description: "(Required) - game(s) `id` can be obtain from the above games\
+          \ api, supports `,` delimited list"
         in: query
         name: games_id
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `fanart`, `banner`,
-          `boxart`, `screenshot`, `clearlogo`'
+      - description: "(Optional) - valid `,` delimited options: `fanart`, `banner`,\
+          \ `boxart`, `screenshot`, `clearlogo`"
         in: query
-        name: filter[type]
+        name: "filter[type]"
         schema:
           type: string
       - description: (Optional) - results page offset to return
@@ -262,16 +262,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/GamesImages'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch game(s) images by game(s) id
@@ -304,16 +304,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/GamesUpdates'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch games update
@@ -329,24 +329,24 @@ paths:
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `icon`, `console`,
-          `controller`, `developer`, `manufacturer`, `media`, `cpu`, `memory`, `graphics`,
-          `sound`, `maxcontrollers`, `display`, `overview`, `youtube`'
+      - description: "(Optional) - valid `,` delimited options: `icon`, `console`,\
+          \ `controller`, `developer`, `manufacturer`, `media`, `cpu`, `memory`, `graphics`,\
+          \ `sound`, `maxcontrollers`, `display`, `overview`, `youtube`"
         in: query
         name: fields
         schema:
           type: string
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Platforms'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch platforms list
@@ -362,30 +362,30 @@ paths:
         required: true
         schema:
           type: string
-      - description: (Required) - supports `,` delimited list
+      - description: "(Required) - supports `,` delimited list"
         in: query
         name: id
         required: true
         schema:
           type: integer
-      - description: '(Optional) - valid `,` delimited options: `icon`, `console`,
-          `controller`, `developer`, `manufacturer`, `media`, `cpu`, `memory`, `graphics`,
-          `sound`, `maxcontrollers`, `display`, `overview`, `youtube`'
+      - description: "(Optional) - valid `,` delimited options: `icon`, `console`,\
+          \ `controller`, `developer`, `manufacturer`, `media`, `cpu`, `memory`, `graphics`,\
+          \ `sound`, `maxcontrollers`, `display`, `overview`, `youtube`"
         in: query
         name: fields
         schema:
           type: string
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PlatformsByPlatformID'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch platforms list by id
@@ -407,24 +407,24 @@ paths:
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `icon`, `console`,
-          `controller`, `developer`, `manufacturer`, `media`, `cpu`, `memory`, `graphics`,
-          `sound`, `maxcontrollers`, `display`, `overview`, `youtube`'
+      - description: "(Optional) - valid `,` delimited options: `icon`, `console`,\
+          \ `controller`, `developer`, `manufacturer`, `media`, `cpu`, `memory`, `graphics`,\
+          \ `sound`, `maxcontrollers`, `display`, `overview`, `youtube`"
         in: query
         name: fields
         schema:
           type: string
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PlatformsByPlatformName'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch platforms by name
@@ -432,7 +432,7 @@ paths:
       - Platforms
   /v1/Platforms/Images:
     get:
-      description: results can be filtered with `filter[type]` param
+      description: "results can be filtered with `filter[type]` param"
       operationId: PlatformsImages
       parameters:
       - description: (Required)
@@ -441,17 +441,17 @@ paths:
         required: true
         schema:
           type: string
-      - description: (Required) - platform(s) `id` can be obtain from the above platforms
-          api, supports `,` delimited list
+      - description: "(Required) - platform(s) `id` can be obtain from the above platforms\
+          \ api, supports `,` delimited list"
         in: query
         name: platforms_id
         required: true
         schema:
           type: string
-      - description: '(Optional) - valid `,` delimited options: `fanart`, `banner`,
-          `boxart`'
+      - description: "(Optional) - valid `,` delimited options: `fanart`, `banner`,\
+          \ `boxart`"
         in: query
-        name: filter[type]
+        name: "filter[type]"
         schema:
           type: string
       - description: (Optional) - results page offset to return
@@ -460,16 +460,16 @@ paths:
         schema:
           type: integer
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PlatformsImages'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch platform(s) images by platform(s) id
@@ -486,16 +486,16 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Genres'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch Genres list
@@ -512,16 +512,16 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Developers'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch Developers list
@@ -538,16 +538,16 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        "200":
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Publishers'
           description: result
-        400:
+        "400":
           content: {}
           description: bad input parameter
-        403:
+        "403":
           content: {}
           description: bad API key or hit rate-limit cap
       summary: Fetch Publishers list
@@ -652,7 +652,7 @@ components:
           Fox team as they fight to save the galaxy from the clutches of the...
         last_updated: 2018-08-11 15:01:11
         rating: E - Everyone
-        coop: No
+        coop: "No"
         youtube: jsEcmfPwnHo
         developers:
         - 6037
@@ -887,7 +887,8 @@ components:
       - name
       type: object
     PaginatedApiResponse_allOf_pages:
-      example: '{"previous":"","current":"https://api.thegamesdb.net/Games/ByGameID?apikey=APIKEY&id=1%2C2%2C3%2C4&fields=players%2Cpublishers%2Cgenres%2Coverview%2Clast_updated%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates&include=boxart%2Cplatform&page=1","next":""}'
+      example: "{\"previous\":\"\",\"current\":\"https://api.thegamesdb.net/Games/ByGameID?apikey=APIKEY&id=1%2C2%2C3%2C4&fields=players%2Cpublishers%2Cgenres%2Coverview%2Clast_updated%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates&include=boxart%2Cplatform&page=1\"\
+        ,\"next\":\"\"}"
       properties:
         previous:
           type: string
@@ -899,12 +900,14 @@ components:
       - current
       - next
       - previous
+      type: object
     PaginatedApiResponse_allOf:
       properties:
         pages:
           $ref: '#/components/schemas/PaginatedApiResponse_allOf_pages'
       required:
       - pages
+      type: object
     GamesByGameID_allOf_data:
       properties:
         count:
@@ -917,6 +920,7 @@ components:
       required:
       - count
       - games
+      type: object
     GamesByGameID_allOf_include_boxart:
       properties:
         base_url:
@@ -930,6 +934,7 @@ components:
       required:
       - base_url
       - data
+      type: object
     GamesByGameID_allOf_include_platform:
       properties:
         data:
@@ -938,6 +943,7 @@ components:
           type: object
       required:
       - data
+      type: object
     GamesByGameID_allOf_include:
       properties:
         boxart:
@@ -947,6 +953,7 @@ components:
       required:
       - boxart
       - platform
+      type: object
     GamesByGameID_allOf:
       properties:
         data:
@@ -956,6 +963,7 @@ components:
       required:
       - data
       - include
+      type: object
     GamesByGameID_v1_allOf_include:
       properties:
         boxart:
@@ -967,6 +975,7 @@ components:
       required:
       - boxart
       - platform
+      type: object
     GamesByGameID_v1_allOf:
       properties:
         data:
@@ -976,6 +985,7 @@ components:
       required:
       - data
       - include
+      type: object
     GamesImages_allOf_data:
       properties:
         count:
@@ -993,12 +1003,14 @@ components:
       - base_url
       - count
       - images
+      type: object
     GamesImages_allOf:
       properties:
         data:
           $ref: '#/components/schemas/GamesImages_allOf_data'
       required:
       - data
+      type: object
     GamesUpdates_allOf_data:
       properties:
         count:
@@ -1011,12 +1023,14 @@ components:
       required:
       - count
       - updates
+      type: object
     GamesUpdates_allOf:
       properties:
         data:
           $ref: '#/components/schemas/GamesUpdates_allOf_data'
       required:
       - data
+      type: object
     Platforms_allOf_data:
       properties:
         count:
@@ -1029,12 +1043,14 @@ components:
       required:
       - count
       - platforms
+      type: object
     Platforms_allOf:
       properties:
         data:
           $ref: '#/components/schemas/Platforms_allOf_data'
       required:
       - data
+      type: object
     PlatformsByPlatformName_allOf_data:
       properties:
         count:
@@ -1047,12 +1063,14 @@ components:
       required:
       - count
       - platforms
+      type: object
     PlatformsByPlatformName_allOf:
       properties:
         data:
           $ref: '#/components/schemas/PlatformsByPlatformName_allOf_data'
       required:
       - data
+      type: object
     PlatformsImages_allOf_data:
       properties:
         count:
@@ -1070,12 +1088,14 @@ components:
       - base_url
       - count
       - images
+      type: object
     PlatformsImages_allOf:
       properties:
         data:
           $ref: '#/components/schemas/PlatformsImages_allOf_data'
       required:
       - data
+      type: object
     Genres_allOf_data:
       properties:
         count:
@@ -1088,12 +1108,14 @@ components:
       required:
       - count
       - genres
+      type: object
     Genres_allOf:
       properties:
         data:
           $ref: '#/components/schemas/Genres_allOf_data'
       required:
       - data
+      type: object
     Developers_allOf_data:
       properties:
         count:
@@ -1106,12 +1128,14 @@ components:
       required:
       - count
       - developers
+      type: object
     Developers_allOf:
       properties:
         data:
           $ref: '#/components/schemas/Developers_allOf_data'
       required:
       - data
+      type: object
     Publishers_allOf_data:
       properties:
         count:
@@ -1124,9 +1148,12 @@ components:
       required:
       - count
       - publishers
+      type: object
     Publishers_allOf:
       properties:
         data:
           $ref: '#/components/schemas/Publishers_allOf_data'
       required:
       - data
+      type: object
+x-original-swagger-version: "2.0"
